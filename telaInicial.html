@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ControlSystem - Pagina Inicial</title>
+    <link rel="stylesheet" href="css/telaInicial.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <!-- config dos botões do navbar -->
+        <li class="nav-item">
+          <a class="nav-link active" id="Caixa-tab" data-toggle="tab" href="#Caixa" role="tab" aria-controls="Caixa" aria-selected="true">Caixa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Vendas-tab" data-toggle="tab" href="#Vendas" role="tab" aria-controls="Vendas" aria-selected="false">Vendas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="cadastro-tab" data-toggle="tab" href="#cadastro" role="tab" aria-controls="cadastro" aria-selected="false">cadastro</a>
+        </li>
+      </ul>
+      <div class="tab-content conteudo" id="myTabContent">
+        <!-- box caixa -->
+        <div class="tab-pane fade show active" id="Caixa" role="tabpanel" aria-labelledby="Caixa-tab">
+            <button class="botao">Abrir Caixa</button>
+            <button class="botao">Fechar Caixa</button>
+            <button class="botao">Relatorio Caixa</button>
+            <button class="botao">Lançamentos</button>
+        </div>
+        <!-- box vendas -->
+        <div class="tab-pane fade" id="Vendas" role="tabpanel" aria-labelledby="Vendas-tab">
+            <div class="container">
+                <div class="painel_venda">
+                    <div>
+                        <p>Pesquisa Produto</p>
+                        <input class="caixa_pesquisa" type="search" id="pesquisa_produto">
+                        <button class="botao" onclick="pesquisa_produto" id="confirma_pesquisa_prod">pesquisar</button>
+                    </div><br>
+                    <div>
+                        <p>Pesquisa Cliente</p>
+                        <input class="caixa_pesquisa" id="pesquisa_cliente" type="search">
+                        <button class="botao" onclick="pesquisa_cliente" id="confirma_pesquisa_cli">Pesquisar</button>
+                    </div><br>
+
+                    <div>
+                        <div class="Forma_pagamento">
+                            <p>Forma de pagamento</p>
+                            <select>
+                                <option value=""></option>
+                                <option value="Dinheiro">Dinheiro</option>
+                                <option value="Credito">Credito</option>
+                                <option value="Debito">Debito</option>
+                                <option value="Pix">Pix</option>
+                            </select>
+                            <div>
+                                <p>Qtd. Parcela</p>
+                                <input type="number" name="" id="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="lista_pedidos">
+
+                </div>
+            </div>
+        </div>
+        <!-- box cadastro -->
+        <div class="tab-pane fade" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
+
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
