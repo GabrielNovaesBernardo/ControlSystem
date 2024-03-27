@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/telaInicial.css">
   <script src="js/telainicial.js"></script>
   <link rel="shortcut icon" href="Images/icone.ico" type="image/x-icon">
@@ -15,40 +16,119 @@
     </div>
     <div class="components">
       <h1>Easy Control</h1>
-      <ul class="class=buntu-mono-regular">
-        <li id="caixa"><a href="#">Caixa</a></li>
-        <li><a href="#">Vendas</a></li>
-        <li><a href="#">Cadastro</a></li>
-        <li><a href="#">Relatórios</a></li>
-        <li><a href="#">Nota Fiscal</a></li>
-        <a href="https://wa.me/5544998547880" target="_blank">
-          <li>Suporte</li>
-        </a>
-      </ul>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-caixa-tab" data-toggle="tab" href="#nav-caixa" role="tab" aria-controls="nav-caixa" aria-selected="true">Caixa</a>
+          <a class="nav-item nav-link" id="nav-vendas-tab" data-toggle="tab" href="#nav-vendas" role="tab" aria-controls="nav-vendas" aria-selected="false">Vendas</a>
+          <a class="nav-item nav-link" id="nav-Cadastro-tab" data-toggle="tab" href="#nav-Cadastro" role="tab" aria-controls="nav-Cadastro" aria-selected="false">Cadastro</a>
+          <a class="nav-item nav-link" id="nav-Relatorios-tab" data-toggle="tab" href="#nav-Relatorios" role="tab" aria-controls="nav-Relatorios" aria-selected="false">Relatórios</a>
+
+          <a class="nav-item nav-link" id="nav-notaFiscal-tab" data-toggle="tab" href="#nav-notaFiscal" role="tab" aria-controls="nav-notaFiscal" aria-selected="false">nota Fiscal</a>
+
+          <a class="nav-item nav-link" href="">Suporte</a>
+          
+        </div>
+      </nav>   
     </div>
   </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <!-- tela caixa -->
+    <div class="tab-pane fade show active" id="nav-caixa" role="tabpanel" aria-labelledby="nav-caixa-tab">
+      <div class="tabelas">
+        <div class="movimento_caixa">
+          <table>
+            <tr>
+              <th>Dados do lançamento</th>
+              <th>Data/Hora</th>
+              <th>Valor</th>
+              <th>Receita</th>
+            </tr>
+            <tr>
+              <td id="hist_lancamento">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ad atque nihil dicta molestias, quas ut doloremque numquam illum magnam laboriosam, dolorum, corporis enim rem culpa ipsa soluta reprehenderit rerum.</p>
+              </td>
+              <td id="data_hora"></td>
+              <td id="valor_lancamento"></td>
+              <td id="cond_pagamento"></td>
+            </tr>
+            <tr>
+              <td id="hist_lancamento">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ad atque nihil dicta molestias, quas ut doloremque numquam illum magnam laboriosam, dolorum, corporis enim rem culpa ipsa soluta reprehenderit rerum.</p>
+              </td>
+              <td id="data_hora"></td>
+              <td id="valor_lancamento"></td>
+              <td id="cond_pagamento"></td>
+            </tr>
+            <tr>
+              <td id="hist_lancamento">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ad atque nihil dicta molestias, quas ut doloremque numquam illum magnam laboriosam, dolorum, corporis enim rem culpa ipsa soluta reprehenderit rerum.</p>
+              </td>
+              <td id="data_hora"></td>
+              <td id="valor_lancamento"></td>
+              <td id="cond_pagamento"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="resumo_caixa">
+          <table>
+            <th><b>Resumo</b></th>
+            <th><b>Total</b></th>
+            <tr>
+              <td>Valor de Abertura</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Dinheiro</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Credito</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Debito</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Pix</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Duplicata</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Recebimentos</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>0,00</td>
+            </tr>
+          </table>
+        </div>
+        </div>
+      </div>
+    <!-- tela vendas -->
+    <div class="tab-pane fade" id="nav-vendas" role="tabpanel" aria-labelledby="nav-vendas-tab">
 
+    </div>
+    <!-- tela cadastro -->
+    <div class="tab-pane fade" id="nav-Cadastro" role="tabpanel" aria-labelledby="nav-Cadastro-tab">
 
-  <div id="tela_caixa" class="tela_caixa">
-    <h1><b>tela do caixa</b></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, recusandae. Atque asperiores a, tenetur aliquam excepturi accusantium, deleniti perspiciatis cupiditate delectus quod consequuntur id ipsum magni vero hic mollitia laboriosam!</p>
+    </div>
+    <!-- tela relatorios -->
+    <div class="tab-pane fade" id="nav-Relatorios" role="tabpanel" aria-labelledby="nav-Relatorios-tab">
+
+    </div>
+    <!-- tela NF -->
+    <div class="tab-pane fade" id="nav-notaFiscal" role="tabpanel" aria-labelledby="nav-notaFiscal-tab">
+
+    </div>
   </div>
-
-  <div id="tela_vendas" class="tela_vendas">
-    <h1><b>tela de vendas</b></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sequi id nostrum reprehenderit minima neque nam aliquid atque soluta suscipit placeat rem natus corporis, est tenetur optio nisi, in voluptatem!</p>
-  </div>
-
-
-  <div id="tela_cadastro" class="tela_cadastro">
-    <h1><b>tela de cadastro de clientes e produtos</b></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem, sequi necessitatibus ratione optio ipsum molestiae vero. Est, architecto dignissimos dolore libero dolorem qui hic perferendis error dolorum cum fuga.</p>
-  </div>
-
-  <div id="tela_relatorio" class="tela_relatorio">
-    <h1><b>tela de relatorios de vendas</b></h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos illo, corrupti, impedit nemo reiciendis assumenda, ex aperiam rerum ut deleniti voluptate at ratione. Minus at quia dolorem. Repudiandae, quibusdam nesciunt.</p>
-  </div>
-  <div></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
 </body>
 </html>

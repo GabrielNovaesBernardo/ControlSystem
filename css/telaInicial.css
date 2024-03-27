@@ -33,8 +33,9 @@ nav{
     height: 60px;
 }
 .components{
-    border-bottom: solid 2px white;
+    /* border-bottom: solid 2px white; */
     display: flex;
+    align-items: center;
 }
 ul{
     list-style: none;
@@ -51,4 +52,19 @@ li{
 a{
     color: white;
     text-decoration: none;
+}
+.tabelas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: top;
+    margin-top: 5rem;
+}
+.movimento_caixa{
+    
+}
+table, th, td{
+    border: solid 2px black;
+    max-width: 55rem;
 }
